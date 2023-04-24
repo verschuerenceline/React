@@ -15,7 +15,7 @@ export default function About() {
         <h1>About {network.name}</h1>
             <p>TripTrek is dé app voor toeristen die Antwerpen willen verkennen. Of je nu op zoek bent naar de beste cafés, de mooiste uitzichten of de verborgen pareltjes van de stad, TripTrek wijst je de weg. Met deze app vind je makkelijk de beste routes.
             Of je nu een fiets wilt huren bij een van onze populaire stations of een van de voorgestelde routes wilt volgen, TripTrek maakt het allemaal mogelijk. Onze app biedt een gebruiksvriendelijke interface en betrouwbare informatie, zodat je optimaal kunt genieten van je verblijf in Antwerpen. Ontdek de stad op jouw manier met Triptrek!</p>
-        <image></image>
+     
     
     </div>
   )

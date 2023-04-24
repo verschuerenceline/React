@@ -1,1 +1,12 @@
-
+.index.js{
+    position: relative;
+    align-items: flex-start;
+    background-image: linear-gradient(
+    #b9cfe9ff 0%,
+    #f6faffff 19%,
+    #f1f5fbff 36%,
+    #d4e1f2ff 54%,
+    #b9cfe9ff 70%,
+    #f0f4fbff 100%
+);
+}
