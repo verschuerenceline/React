@@ -1,17 +1,39 @@
 .title {
     color: #AC5655;
     font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
   }
   
-  .button {
+  .buttonleesmeer {
     background-color: #FF9F0A;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 600;
+    font-size: 13px;
     color: white;
     border: none;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
+    width: 250px;
+  }
+ 
+  .buttonallestations {
+    background-color: #FF9F0A;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 250px;
   }
 
-  .p {
-    font-family: 'Urbanist', sans-serif;
+  .text {
+    color: #273B77;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 500 !important;
+    width: 500px !important;
   }
+  
   
