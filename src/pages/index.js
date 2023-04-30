@@ -1,15 +1,34 @@
-import styles from '@/styles/Home.module.css'
-import Link from 'next/link'
+import React from 'react';
 import Image from 'next/image';
+import ButtonInfo from '../components/ButtonInfo';
+import styles from '@/styles/Home.module.css';
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500&display=swap" />
+
+
 
 export default function Home() {
+  const handleClick = () => {
+  };
+
   return (
-    <div>
+    <>
       <div>
-      <Image src="/assets/womenandbike.png" alt="Mijn afbeelding" width={399} height={609} />
-    </div>
-      <h1>Welkom bij TriptTrek</h1>
+        <Image src="/assets/womenandbike.png" alt="Mijn afbeelding" width={420} height={600} />
+      </div>
+      <h1 className={styles.title}>Welkom bij TriptTrek</h1>
       <p>TripTrek is dé app voor toeristen die Antwerpen willen verkennen. Of je nu op zoek bent naar de beste cafés, de mooiste uitzichten of de verborgen pareltjes van de stad, TripTrek wijst je de weg. Met deze app vind je makkelijk de beste routes.</p>
-    </div>
-  )
+    
+      <div className="MyComponent">
+        <ButtonInfo label="Lees meer over TripTrek" onClick={handleClick} className={styles.buttonleesmeer}/>
+      </div>
+
+      <h1 className={styles.title}>Populaire stations</h1>
+
+      <div>
+        <Image src="/assets/route.png" alt="Mijn afbeelding" width={420} height={600} />
+      </div>
+    </>
+
+  
+  );
 }
