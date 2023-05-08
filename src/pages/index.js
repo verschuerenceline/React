@@ -1,11 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import ButtonInfo from '../components/ButtonInfo';
+import Footer from '../components/Footer';
 import styles from '@/styles/Home.module.css';
+
 
 export default function Home() {
   const handleClick = () => {
-  };
+  }; 
+
 
   return (
     <>
@@ -29,6 +32,11 @@ export default function Home() {
       <div>
         <Image src="/assets/route.png" alt="Mijn afbeelding" width={420} height={600} />
       </div>
+     
+     <div>
+      <Footer></Footer>
+     </div>
+
     </>
 
   
