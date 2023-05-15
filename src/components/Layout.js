@@ -1,4 +1,4 @@
-/*import Link from 'next/link'
+import Link from 'next/link'
 import React, { useState } from 'react';
 import styles from '@/styles/Navbar.module.css';
 
@@ -13,7 +13,7 @@ export default function Layout({ children }) {
    
   <>
       <nav className={styles.navbar}>
-        <div className={styles.navbar-brand}>My Website</div>
+        <div className={styles.navbar}>Menu</div>
         <button
           className={`${styles["navbar-toggler"]} ${isOpen ? styles["open"] : ""}`}
           onClick={handleToggle}
