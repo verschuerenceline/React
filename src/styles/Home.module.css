@@ -50,6 +50,45 @@
 .icon {
   margin-right: 10px; 
 }
+
+.icon_midden {
+  margin-right: 10px; 
+  color: #AC5655;
+  font-size: 25px;
+}
+
+.title_h2 {
+  color: #273B77;
+  font-family: 'Urbanist', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
   
+.p_locaties{
+  font-family: 'Urbanist', sans-serif;
+  color: #273B77;
+}
+
+.p_stations{
+  font-family: 'Urbanist', sans-serif;
+  color: #273B77;
+  margin-left: 20px;
+}
   
-  
+
+.zoekbalk {
+  display: flex;
+  align-items: center;
+  font-family: 'Urbanist', sans-serif;
+  margin-bottom: 20px;
+}
+
+.zoekInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  font-family: 'Urbanist', sans-serif;
+  text-align: center;
+}

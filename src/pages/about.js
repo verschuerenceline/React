@@ -26,7 +26,7 @@ export default function About() {
       </p>
     </div>
     <div className={styles.footer}>
-        <img src="/assets/footer.over.png" alt="Footer Image" className={styles.footerImage} />
+        <img src="/assets/footer.over.png" alt="Footer Image" className={styles.footerImage} width={520} height={480}  />
       </div>
   </div>   
 

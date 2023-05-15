@@ -53,15 +53,15 @@ export default function Home() {
           <p>VERTREK: Centraal station</p>
         </div>
         <div className={styles.iconContainer}>
-          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon} />
+        <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon_midden} />
           <p>VOLGENDE: Theaterbuurt</p>
         </div>
         <div className={styles.iconContainer}>
-          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon} />
+          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon_midden} />
           <p>VOLGENDE: Vlaamse kaaien</p>
         </div>
         <div className={styles.iconContainer}>
-          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon} />
+          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon_midden} />
           <p>VOLGENDE: Het eilandje</p>
         </div>
         <div className={styles.iconContainer}>

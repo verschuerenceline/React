@@ -5,6 +5,7 @@
     align-items: center;
     padding: 1rem;
     background-color: #B9CFE9;
+    margin-top: -5px;
   }
   
   .left {
@@ -38,6 +39,6 @@
     text-align: center;
     color: #273B77;
     font-family: 'Urbanist', sans-serif !important;
-    font-weight: 800 !important;
+    font-weight: bold !important;
   }
   
