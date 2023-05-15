@@ -16,7 +16,6 @@ export default function About() {
     
     <div>
     <div className={styles.banner}>
-      <img src="/assets/banner.over.png" alt="Banner Image" className={styles.bannerImage} />
       <h1 className={styles.title}>OVER {network.name}</h1>
     </div>
     <div>

@@ -1,26 +1,27 @@
-import Link from 'next/link'
 import React, { useState } from 'react';
 import styles from '@/styles/Navbar.module.css';
+import Link from 'next/link';
 
 export default function Layout({ children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-   
-  <>
+    <div>
       <nav className={styles.navbar}>
-        <div className={styles.navbar}>Menu</div>
+        <div className={styles.navbar}></div>
         <button
-          className={`${styles["navbar-toggler"]} ${isOpen ? styles["open"] : ""}`}
-          onClick={handleToggle}
+          className={`${styles["navbar-toggler"]} ${isMenuOpen ? styles["open"] : ""}`}
+          onClick={handleMenuToggle}
         >
           <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <ul className={`${styles["navbar-nav"]} ${isOpen ? styles["open"] : ""}`}>
+        <ul className={`${styles["navbar-nav"]} ${isMenuOpen ? styles["open"] : ""}`}>
           <li className={styles["nav-item"]}>
             <Link href="/">Home</Link>
           </li>
@@ -36,6 +37,6 @@ export default function Layout({ children }) {
         </ul>
       </nav>
       <main>{children}</main>
-    </>
-  )
+    </div>
+  );
 }

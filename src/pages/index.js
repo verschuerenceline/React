@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisVertical, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import ButtonInfo from '../components/ButtonInfo';
 import Footer from '../components/Footer';
@@ -24,10 +26,48 @@ export default function Home() {
       </div>
 
       <h1 className={styles.title}>Populaire stations</h1>
+        <div className={styles.iconContainer}>
+        <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+          <p>Centraal Station</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+          <p>Groenplaats</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+          <p>De Singel</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+          <p>Meir</p>
+        </div>
 
       <div className="MyComponent">
         <ButtonInfo label="Bekijk alle stations" onClick={handleClick} className={styles.buttonallestations}/>
       </div>
+
+      <h1 className={styles.title}>Populaire route</h1>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+          <p>VERTREK: Centraal station</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon} />
+          <p>VOLGENDE: Theaterbuurt</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon} />
+          <p>VOLGENDE: Vlaamse kaaien</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faEllipsisVertical} className={styles.icon} />
+          <p>VOLGENDE: Het eilandje</p>
+        </div>
+        <div className={styles.iconContainer}>
+          <FontAwesomeIcon icon={faLocationDot} className={styles.icon} />
+          <p>EINDE: Meir</p>
+        </div>
 
       <div>
         <Image src="/assets/route.png" alt="Mijn afbeelding" width={420} height={600} />
@@ -39,6 +79,5 @@ export default function Home() {
 
     </>
 
-  
   );
 }
