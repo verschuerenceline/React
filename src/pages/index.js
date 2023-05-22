@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisVertical, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
+import Link from 'next/link';
 import ButtonInfo from '../components/ButtonInfo';
 import Footer from '../components/Footer';
 import styles from '@/styles/Home.module.css';
@@ -10,7 +11,7 @@ import styles from '@/styles/Home.module.css';
 export default function Home() {
   const handleClick = () => {
   }; 
-
+  
 
   return (
     <>
@@ -21,9 +22,14 @@ export default function Home() {
       <h1 className={styles.title}>Welkom bij TriptTrek</h1>
       <p className={styles.text}> TripTrek is dé app voor toeristen die Antwerpen willen verkennen. Of je nu op zoek bent naar de beste cafés, de mooiste uitzichten of de verborgen pareltjes van de stad, TripTrek wijst je de weg. Met deze app vind je makkelijk de beste routes.</p>
     
-      <div className="MyComponent">
-        <ButtonInfo label="Lees meer over TripTrek" onClick={handleClick} className={styles.buttonleesmeer}/>
+      <div className="button_over">
+        <Link href="/about">
+          <ButtonInfo label="Lees meer over TripTrek" onClick={handleClick} className={styles.buttonleesmeer}/>
+        </Link>
       </div>
+
+
+
 
       <h1 className={styles.title}>Populaire stations</h1>
         <div className={styles.iconContainer}>
@@ -43,9 +49,11 @@ export default function Home() {
           <p>Meir</p>
         </div>
 
-      <div className="MyComponent">
-        <ButtonInfo label="Bekijk alle stations" onClick={handleClick} className={styles.buttonallestations}/>
-      </div>
+        <div className="button_stations">
+          <Link href="/stations">
+            <ButtonInfo label="Bekijk alle stations" onClick={handleClick} className={styles.buttonleesmeer}/>
+          </Link>
+        </div>
 
       <h1 className={styles.title}>Populaire route</h1>
         <div className={styles.iconContainer}>

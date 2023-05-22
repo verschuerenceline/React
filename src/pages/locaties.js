@@ -32,6 +32,8 @@ export default function Locaties() {
   };
 
   return (
+
+    
     <div>
       <h1 className={styles.title}>Locaties</h1>
       {huidigeLocatie && (

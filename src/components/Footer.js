@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '@/styles/Footer.module.css'; // importeer CSS-modules
 
 
@@ -9,11 +10,37 @@ const Footer = () => {
 
       <div className={styles.left}>
         <h1>Home</h1>
-        <h1>Stations</h1>
-            <p>Centraal Station</p>
-            <p>Groenplaats</p>
-            <p>De singel</p>
-            <p>Meir</p>
+        <div>
+      <h1>Stations</h1>
+          <Link href="/stations">
+          Stations  
+          </Link>
+
+    </div>
+          <p>
+          <Link href="/locaties">
+          Centraal station  
+          </Link>
+          </p>
+
+          <p>
+          <Link href="/locaties">
+          Groenplaats  
+          </Link>
+          </p>
+
+          <p>
+          <Link href="/locaties">
+          De Singel  
+          </Link>
+          </p>
+        
+          <p>
+          <Link href="/locaties">
+          Meir  
+          </Link>
+          </p>
+
         <h1>Kaart</h1>
       </div>
 

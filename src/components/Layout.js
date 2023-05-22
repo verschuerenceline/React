@@ -11,32 +11,39 @@ export default function Layout({ children }) {
 
   return (
     <div>
-      <nav className={styles.navbar}>
-        <div className={styles.navbar}></div>
-        <button
-          className={`${styles["navbar-toggler"]} ${isMenuOpen ? styles["open"] : ""}`}
-          onClick={handleMenuToggle}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul className={`${styles["navbar-nav"]} ${isMenuOpen ? styles["open"] : ""}`}>
-          <li className={styles["nav-item"]}>
+  <nav className={styles.navbar}>
+    <div className={styles.navbar}></div>
+    <button
+      className={`${styles["navbar-toggler"]} ${isMenuOpen ? styles["open"] : ""}`}
+      onClick={handleMenuToggle}
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+      
+    </button>
+    <div className={`${styles["navbar-nav"]} ${isMenuOpen ? styles["open"] : ""}`}>
+      <div className={styles["nav-item"]}>
+        <span>Menu</span>
+        <ul className={styles["dropdown-menu"]}>
+          <li>
             <Link href="/">Home</Link>
           </li>
-          <li className={styles["nav-item"]}>
+          <li>
             <Link href="/about">About</Link>
           </li>
-          <li className={styles["nav-item"]}>
+          <li>
             <Link href="/stations">Stations</Link>
           </li>
-          <li className={styles["nav-item"]}>
+          <li>
             <Link href="/locaties">Locaties</Link>
           </li>
         </ul>
-      </nav>
-      <main>{children}</main>
+      </div>
     </div>
+  </nav>
+  <main>{children}</main>
+</div>
+
   );
 }
