@@ -39,7 +39,7 @@
 }
 
 .open span:first-child {
-  transform: rotate(45deg) translate(2px, 2px);
+  transform: rotate(45deg) translate(14.2px, 13.5px);
 }
 
 .open span:nth-child(2) {

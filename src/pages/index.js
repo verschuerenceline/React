@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
       <div>
-        <Image src="/assets/route.png" alt="Mijn afbeelding" width={420} height={600} />
+        <Image src="/assets/route.png" alt="Mijn afbeelding" width={430} height={600} />
       </div>
      
      <div>

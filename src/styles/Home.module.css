@@ -1,3 +1,4 @@
+
 .title {
     color: #AC5655;
     font-family: 'Urbanist', sans-serif;
@@ -67,6 +68,7 @@
   font-family: 'Urbanist', sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  margin-top: 50px;
 }
   
 .p_locaties{
@@ -98,4 +100,13 @@
   font-size: 16px;
   font-family: 'Urbanist', sans-serif;
   text-align: center;
+}
+
+.afstand {
+  color: #273B77;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 500 !important;
+    margin: 10px ;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

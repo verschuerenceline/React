@@ -54,17 +54,12 @@ export default function Locaties() {
     
     <div>
       <h1 className={styles.title}>Locaties</h1>
-      {huidigeLocatie && (
-        <p>Je huidige locatie: {huidigeLocatie.latitude} km, {huidigeLocatie.longitude} km</p>
-      )}
       <ul>
         {stations.map(station => (
           <li key={station.id}>
             <h2 className={styles.title_h2}>{station.name}</h2>
-            <p className={styles.p_locaties}>Breedtegraad: {station.latitude} km</p>
-            <p className={styles.p_locaties}>Lengtegraad: {station.longitude} km</p>
             {huidigeLocatie && (
-              <p>Afstand tot huidige locatie: {berekenAfstand(
+              <p className={styles.afstand}>Afstand tot huidige locatie: {berekenAfstand(
                 huidigeLocatie.latitude,
                 huidigeLocatie.longitude,
                 station.latitude,
