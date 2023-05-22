@@ -26,18 +26,23 @@ export default function Layout({ children }) {
       <div className={styles["nav-item"]}>
         <span>Menu</span>
         <ul className={styles["dropdown-menu"]}>
+
           <li>
             <Link href="/">Home</Link>
           </li>
+      
           <li>
             <Link href="/about">About</Link>
           </li>
+
           <li>
             <Link href="/stations">Stations</Link>
           </li>
+
           <li>
             <Link href="/locaties">Locaties</Link>
           </li>
+          
         </ul>
       </div>
     </div>

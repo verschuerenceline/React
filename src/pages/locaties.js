@@ -1,10 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '@/styles/Home.module.css';
 import useNetwork from '@/data/network';
 
 export default function Locaties() {
   const { network, isLoading, isError } = useNetwork();
   const [huidigeLocatie, setHuidigeLocatie] = useState(null);
+
+  useEffect(() => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setHuidigeLocatie({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          });
+        },
+        (error) => {
+          console.error(error);
+        }
+      );
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  }, []);
 
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Fout</div>;
