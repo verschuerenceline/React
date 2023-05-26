@@ -15,25 +15,25 @@ const Footer = () => {
          
     </div>
           <p>
-          <Link href="/locaties">
+          <Link href="/locaties" className={styles["footer-link"]}>
           Centraal station  
           </Link>
           </p>
 
           <p>
-          <Link href="/locaties">
+          <Link href="/locaties" className={styles["footer-link"]}>
           Groenplaats  
           </Link>
           </p>
 
           <p>
-          <Link href="/locaties">
+          <Link href="/locaties" className={styles["footer-link"]}>
           De Singel  
           </Link>
           </p>
         
           <p>
-          <Link href="/locaties">
+          <Link href="/locaties" className={styles["footer-link"]}>
           Meir  
           </Link>
           </p>

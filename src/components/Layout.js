@@ -22,16 +22,16 @@ export default function Layout({ children }) {
             <span>Menu</span>
             <ul className={styles["dropdown-menu"]}>
               <li>
-                <Link onClick={handleMenuToggle} href="/">Home</Link>
+                <Link onClick={handleMenuToggle} href="/" className={styles["nav-link"]}>Home</Link>
               </li>
               <li>
-                <Link onClick={handleMenuToggle} href="/about">About</Link>
+                <Link onClick={handleMenuToggle} href="/about" className={styles["nav-link"]}>About</Link>
               </li>
               <li>
-                <Link onClick={handleMenuToggle} href="/stations">Stations</Link>
+                <Link onClick={handleMenuToggle} href="/stations" className={styles["nav-link"]}>Stations</Link>
               </li>
               <li>
-                <Link onClick={handleMenuToggle} href="/locaties">Locaties</Link>
+                <Link onClick={handleMenuToggle} href="/locaties" className={styles["nav-link"]}>Locaties</Link>
               </li>
             </ul>
           </div>
