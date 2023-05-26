@@ -43,7 +43,7 @@ const Footer = () => {
 
       <div className={styles.right}>
         <h1>TRIPTREK</h1>
-        <img src="/assets/favicon.ico"/>
+        <img src="/assets/favicon.png"/>
       </div>
 
       <div className={styles.center}>
