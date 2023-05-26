@@ -44,6 +44,14 @@
     margin-bottom: 20px;
   }
 
+  .textabout {
+    color: #273B77;
+    font-family: 'Urbanist', sans-serif !important;
+    font-weight: 500 !important;
+    width: 100%;
+    margin-left: 10px;
+  }
+  
 
 .iconContainer {
    display: flex;

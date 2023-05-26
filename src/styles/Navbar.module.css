@@ -36,6 +36,7 @@
   height: 2px;
   background-color: #000;
   transition: all 0.3s ease;
+  margin-left: 50px;
 }
 
 .open span:first-child {
@@ -97,7 +98,7 @@
 .nav-item {
   text-align: center;
   color: #273B77;
-  color: #AC5655;
+      color: #AC5655;
 
   font-family: 'Urbanist', sans-serif;
   text-transform: uppercase !important; 
