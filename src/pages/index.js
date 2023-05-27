@@ -19,7 +19,7 @@ export default function Home() {
       <div>
         <Image src="/assets/womenandbike.png" alt="Mijn afbeelding" width={420} height={600} />
       </div>
-      <h1 className={styles.title}>Welkom bij TriptTrek</h1>
+      <h1 className={styles.title}>Welkom bij TripTrek</h1>
       <p className={styles.text}> TripTrek is dé app voor toeristen die Antwerpen willen verkennen. Of je nu op zoek bent naar de beste cafés, de mooiste uitzichten of de verborgen pareltjes van de stad, TripTrek wijst je de weg. Met deze app vind je makkelijk de beste routes.</p>
     
       <div className="button_over">
